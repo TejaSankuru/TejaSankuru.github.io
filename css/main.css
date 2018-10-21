@@ -1,17 +1,16 @@
 .navbar {
   margin-bottom: 0;
-  background-color: rgba(8,8,8,0.8);
+  background-color: rgba(8, 8, 8, 0.8);
   border: none;
-  &.navbar-default .navbar-nav>li>a,
-  &.navbar-default .navbar-header .navbar-brand {
-    font-family: "Cantarell", sans-serif;
-    text-transform: uppercase;
-    transition: color 0.3s ease-in-out;
-    color: #FEFDEB;
-    &:hover, &:focus, &:active {
-      color: #48A09B;
-    }
-  }
+}
+.navbar.navbar-default .navbar-nav > li > a, .navbar.navbar-default .navbar-header .navbar-brand {
+  font-family: "Cantarell", sans-serif;
+  text-transform: uppercase;
+  transition: color 0.3s ease-in-out;
+  color: Black;
+}
+.navbar.navbar-default .navbar-nav > li > a:hover, .navbar.navbar-default .navbar-header .navbar-brand:hover, .navbar.navbar-default .navbar-nav > li > a:focus, .navbar.navbar-default .navbar-header .navbar-brand:focus, .navbar.navbar-default .navbar-nav > li > a:active, .navbar.navbar-default .navbar-header .navbar-brand:active {
+  color: #48a09b;
 }
 section {
   background-size: cover;
@@ -20,153 +19,162 @@ section {
   background-attachment: fixed;
   overflow: hidden;
   width: 100%;
-  .content {
-    padding-top: 30px;
-    padding-bottom: 30px;
+  height: 1000px;
+}
+section .content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+section.home-intro {
+  background-color: #afb1c9;
+  background-image: url('http://www.satprnews.com/wp-content/uploads/2017/12/Computer-Assisted-Coding-Software.jpg');
+}
+section.home-intro h1 {
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  font-size: 22px;
+  color: #e33258;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+  section.home-intro h1 {
+    font-size: 90px;
   }
-  &.home-intro {
-    background-color: #AFB1C9;
-    background-image: url('https://jpk-image-hosting.s3.amazonaws.com/skyline.jpg');
-    h1 {
-      font-family: "Dancing Script", cursive;
-      font-weight: 700;
-      font-size: 60px;
-      color: #E33258;
-      margin-top: 0;
-      margin-bottom: 15px;
-      @media (min-width: 768px) {
-        font-size: 90px;
-      }
-    }
-    h2 {
-      font-family: "Cantarell", sans-serif;
-      font-weight: 700;
-      font-size: 22px;
-      color: #363B3A;
-      padding-top: 10px;
-      margin-top: 0;
-      margin-bottom: 13px;
-      border-top: 3px solid #363B3A;
-      display: inline-block;
-      @media (min-width: 768px) {
-        font-size: 32px;
-      }
-    }
-    ul {
-      padding: 0;
-      list-style-type: none;
-      li {
-        display: inline;
-        a {
-          color: #48A09B;
-          transition: color 0.3s linear;
-          &:hover, &:focus, &:active {
-            color: #E33258;
-          }
-        }
-      }
-    }
+}
+section.home-intro h2 {
+  font-family: "Cantarell", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #363b3a;
+  padding-top: 10px;
+  margin-top: 0;
+  margin-bottom: 13px;
+  border-top: 3px solid #363b3a;
+  display: inline-block;
+}
+@media (min-width: 768px) {
+  section.home-intro h2 {
+    font-size: 32px;
   }
-  &.about {
-    background-color: #A4B5BF;
-    background-image: url('https://jpk-image-hosting.s3.amazonaws.com/computer-desk.jpg');
-    color: #FEFDEB;
-    font-family: "Cantarell", sans-serif;
-    p {
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 1.4;
-    }
-    blockquote {
-      font-family: "Cantarell", sans-serif;
-      font-weight: 700;
-    }
+}
+section.home-intro ul {
+  padding: 0;
+  list-style-type: none;
+}
+section.home-intro ul li {
+  display: inline;
+}
+section.home-intro ul li a {
+  color: #48a09b;
+  transition: color 0.3s linear;
+}
+section.home-intro ul li a:hover, section.home-intro ul li a:focus, section.home-intro ul li a:active {
+  color: #e33258;
+}
+section.about {
+  background-color: #a4b5bf;
+  background-image: url('http://static1.squarespace.com/static/51b52c1ee4b0f0ee887cd1e8/530b9c94e4b0393d6411db17/5987c268d7bdce820bcef39e/1502147555300/_DSC0038-1.jpg?format=1000w');
+  color: #fefdeb;
+  font-family: "Cantarell", sans-serif;
+}
+section.about p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+section.about blockquote {
+  font-family: "Cantarell", sans-serif;
+  font-weight: 700;
+}
+section.portfolio {
+  background-color: #9de0ad;
+  background-image: url('https://jpk-image-hosting.s3.amazonaws.com/chalk.jpg');
+}
+section.portfolio h2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-family: "Cantarell", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+section.portfolio .project {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 20px;
+}
+section.portfolio .project .overlay {
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(8, 8, 8, 0.7);
+  overflow: hidden;
+  z-index: 10;
+  transition: opacity 0.3s ease-in-out;
+}
+section.portfolio .project .overlay h4 {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Cantarell", sans-serif;
+  font-size: 24px;
+  color: #cdd7b6;
+}
+section.portfolio .project:hover .overlay, section.portfolio .project:focus .overlay, section.portfolio .project:active .overlay {
+  opacity: 0.4;
+}
+section.contact {
+  background-color: #594f4f;
+  background-image: url('https://jpk-image-hosting.s3.amazonaws.com/can-talk.jpg');
+}
+section.contact h2 {
+  font-family: "Cantarell", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #cdd7b6;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  section.contact h2 {
+    font-size: 28px;
   }
-  &.portfolio {
-    background-color: #9DE0AD;
-    background-image: url('https://jpk-image-hosting.s3.amazonaws.com/chalk.jpg');
-    h2 {
-      margin-top: 40px;
-      margin-bottom: 40px;
-      font-family: "Cantarell", sans-serif;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
-    .project {
-      width: 100%;
-      height: 200px;
-      position: relative;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      margin-bottom: 20px;
-      .overlay {
-        display: table;
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        background-color: rgba(8,8,8,0.7);
-        overflow: hidden;
-        z-index: 10;
-        transition: opacity 0.3s ease-in-out;
-        h4 {
-          display: table-cell;
-          vertical-align: middle;
-          text-align: center;
-          text-transform: uppercase;
-          font-family: "Cantarell", sans-serif;
-          font-size: 24px;
-          color: #CDD7B6;
-        }
-      }
-      &:hover .overlay, &:focus .overlay, &:active .overlay {
-        opacity: 0.4;
-      }
-    }
+}
+section.contact h3 a {
+  font-family: "Cantarell", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #48a09b;
+  transition: color 0.3s linear;
+}
+section.contact h3 a:hover, section.contact h3 a:focus, section.contact h3 a:active {
+  color: #e33258;
+}
+@media (min-width: 768px) {
+  section.contact h3 a {
+    font-size: 42px;
   }
-  &.contact {
-    background-color: #594F4F;
-    background-image: url('https://jpk-image-hosting.s3.amazonaws.com/can-talk.jpg');
-    h2 {
-      font-family: "Cantarell", sans-serif;
-      font-weight: 700;
-      font-size: 22px;
-      color: #CDD7B6;
-      text-transform: uppercase;
-      @media (min-width: 768px) {
-        font-size: 28px;
-      }
-    }
-    h3 a {
-      font-family: "Cantarell", sans-serif;
-      font-weight: 700;
-      font-size: 28px;
-      text-transform: uppercase;
-      text-decoration: none;
-      color: #48A09B;
-      transition: color 0.3s linear;
-      &:hover, &:focus, &:active {
-        color: #E33258;
-      }
-      @media (min-width: 768px) {
-        font-size: 42px;
-      }
-    }
-  }
-  .vcenter {
-    height: 100%;
-    .row {
-      height: 100%;
-      display: table;
-      div[class^="col-"] {
-        display: table-cell;
-        vertical-align: middle;
-        float: none;
-      }
-    }
-  }
+}
+section .vcenter {
+  height: 100%;
+}
+section .vcenter .row {
+  height: 100%;
+  display: table;
+}
+section .vcenter .row div[class^="col-"] {
+  display: table-cell;
+  vertical-align: middle;
+  float: none;
 }
