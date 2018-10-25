@@ -1,4 +1,4 @@
 # TejaSankuru.github.io
 My Portfolio
 
-[![Screen-Shot-2018-10-21-at-4-36-43-PM.png](https://i.postimg.cc/VNwL58LZ/Screen-Shot-2018-10-21-at-4-36-43-PM.png)](https://postimg.cc/DSCKYRG1)
+[![Screen-Shot-2018-10-25-at-7-55-45-AM.png](https://i.postimg.cc/wBYkd4zH/Screen-Shot-2018-10-25-at-7-55-45-AM.png)](https://postimg.cc/9D19dpzN)
